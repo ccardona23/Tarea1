@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <form id="formulario" action="#">
+            <h3>FORMULARIO</h3>
+          <br>
+            <input type="text" class="form" name="nombre" id="nombre" value="" placeholder="Ingresar Nombre">
+        
+            <input type="text"  class="form"  name="apellidos"  id="apellidos" value="" placeholder="Ingresar Apellido">
+         
+            <input type="text" class="form"  name="edad" id="edad" value="" size="2" maxlength="2" placeholder="Ingresar Edad" onkeyup="format(this)" onchange="format(this)">
+         
+            <input type="text"  class="form"  name="sexo" id="sexo" value="" placeholder="Ingresar su Sexo">
+       
+            <input type="email" class="form"  name="correo" id="correo" value="" placeholder="Ingresar Correo">
+
+            <input type="button" value="Agregar" class="principal" id="add_row"/>
+        </form>
+        
+        <div class="table-wrapper">
+        <table id="tabla_factura">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+        
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+    <script type="text/javascript " src="fac.js"></script>
+    
+</body>
+</html>
